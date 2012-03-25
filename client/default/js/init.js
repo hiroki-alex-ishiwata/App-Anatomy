@@ -14,7 +14,7 @@ function init () {
 //  myScroll = new iScroll('content');
   
   $('#input_01').click(function (e) {
-    $(this).attr('css','background-color: blue');
+    $(this).attr('value','background-color: blue');
   });
 }
 

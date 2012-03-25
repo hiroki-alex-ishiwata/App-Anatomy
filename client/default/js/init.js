@@ -13,7 +13,9 @@ function init () {
   }
   myScroll = new iScroll('content');
   
-  $('input_01')
+  $('input_01').click(function (e) {
+    $(this).attr('css','background:#fff';
+  });
 }
 
 

@@ -19,7 +19,8 @@ function init () {
 function getServerData(callback) {
   var serverData;
   $fh.act({
-    act: 'getText'
+    act: 'getText',
+    req: {}
   }, function (result) {
     $fh.data({
       serverData = result.data;

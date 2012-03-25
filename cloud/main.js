@@ -15,5 +15,5 @@ exports.getConfig = function(params, callback) {
 };
 
 exports.getText = function(params, callback) {
-  return callback(null, {data: "server" + params.input});
+  return callback(null, {data: "--" + params.input});
 };

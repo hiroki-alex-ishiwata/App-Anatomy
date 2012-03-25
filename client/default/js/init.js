@@ -14,7 +14,7 @@ function init () {
     getServerData("aaaa");
   });
   $('#input_01').keydown(function (e) {
-    alert("evnt");
+    alert($('#input_01').value);
   });
 }
 

@@ -11,14 +11,14 @@ function init () {
   myScroll = new iScroll('content');
   
   // Load the menu bar 
-  setUpLogo();
-  setUpMenuBar(); 
-  setUpReloadButton();
+  //setUpLogo();
+  //setUpMenuBar(); 
+  //setUpReloadButton();
   
   // Resolve the data to display in the tabs. Pass setContentPane function 
   // as a callback - we do not want setContentPane called until the tab
   //  data has been loaded.
-  getTabData(setContentPane);
+  //getTabData(setContentPane);
   
   
   

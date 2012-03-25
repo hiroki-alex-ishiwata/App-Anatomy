@@ -15,12 +15,12 @@ function init () {
   });
 }
 
-function getServerData(input) {
+function getServerData(str) {
   var serverData;
   
   $fh.act({
     act: 'getText',
-    req: {str: input}
+    req: {input: str}
   }, function (result) {
       serverData = result.data;
       $('#input_01').attr('value',serverData);

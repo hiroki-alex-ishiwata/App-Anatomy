@@ -13,7 +13,7 @@ function init () {
     e.preventDefault();
     getServerData("aaaa");
   });
-  $('#input_01').change(function (e) {
+  $('#input_01').click(function (e) {
     alert($('#input_01').atter("value"));
   });
 }

@@ -16,7 +16,7 @@ function init () {
   
   $('#btn_01').click(function (e) {
     e.preventDefault();
-    alert(getServerData());
+    getServerData();
   });
 }
 

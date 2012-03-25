@@ -16,7 +16,7 @@ function init () {
 
 }
 
-function getServerData() {
+function getServerData(callback) {
 
   $fh.act({
     act: 'getText'

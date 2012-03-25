@@ -23,7 +23,7 @@ function getTabData(callback) {
   
   // Make act call to get latest config from server
   $fh.act({
-    act: 'getConfig',
+    act: 'getText',
     req: {
       ts: Date.now()
     }

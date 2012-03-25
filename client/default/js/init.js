@@ -8,10 +8,10 @@ init();
 var myScroll;
 
 function init () {
-  if ('undefined' === typeof iScroll) {
-    iScroll = exports.iScroll;
-  }
-  myScroll = new iScroll('content');
+//  if ('undefined' === typeof iScroll) {
+//iScroll = exports.iScroll;
+//  }
+//  myScroll = new iScroll('content');
   
   $('#input_01').click(function (e) {
     $(this).attr('css','background-color: blue');

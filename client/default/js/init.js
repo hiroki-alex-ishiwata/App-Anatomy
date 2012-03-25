@@ -37,9 +37,7 @@ function getTabData(callback) {
       act: 'save',
       key: 'config',
       val: JSON.stringify(configData)
-    }, function (val) {
-      // Save successful, continue with initialisation
-      setUpTabs(configData, callback);      
+    }, function (val) {   
     }, function (error) {
     })
   }, function (code, errorprops, params) {

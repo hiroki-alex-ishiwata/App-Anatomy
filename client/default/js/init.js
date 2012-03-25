@@ -11,7 +11,7 @@ function init () {
 
   $('#btn_01').click(function (e) {
     e.preventDefault();
-    getServerData();
+    getServerData("aaaa");
   });
 }
 

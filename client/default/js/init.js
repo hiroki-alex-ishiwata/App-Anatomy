@@ -33,7 +33,6 @@ function getServerData() {
 
   });
   
-  return serverData;
 }  
 
 

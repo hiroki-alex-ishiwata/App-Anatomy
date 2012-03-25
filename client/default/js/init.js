@@ -18,6 +18,7 @@ function init () {
 
 function getServerData() {
   var serverData;
+    alert("ddd");
   $fh.act({
     act: 'getText',
     req: {}

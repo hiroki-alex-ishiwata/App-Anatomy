@@ -14,7 +14,7 @@ function init () {
     getServerData("aaaa");
   });
   
-  $('#input_01').keydown(function (e) {
+  $('#input_01').blur(function (e) {
     var val=$(this).attr("value");
     if(val){
       $(this).attr("value", getServerData(val));

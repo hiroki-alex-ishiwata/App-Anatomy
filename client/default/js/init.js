@@ -8,12 +8,7 @@ init();
 var myScroll;
 
 function init () {
-  
-//  $('#input_01').focus(function (e) {
-//    $(this).attr('value','export text');
-//    getServerData();
-//  });
-  
+
   $('#btn_01').click(function (e) {
     e.preventDefault();
     getServerData();

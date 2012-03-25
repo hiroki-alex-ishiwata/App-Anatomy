@@ -14,20 +14,7 @@ function init () {
 //    getServerData();
   });
 
-
-  var serverData;
-    alert("ddd");
-  $fh.act({
-    act: 'getText',
-    req: {}
-  }, function (result) {
-    alert("hoge");
-      serverData = result.data;
-  }, function (msg, err) {
-
-  });
-
-
+getServerData();
 
 }
 

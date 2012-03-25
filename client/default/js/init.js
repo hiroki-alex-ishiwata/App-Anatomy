@@ -1,5 +1,8 @@
+
 $fh.ready(function () {
-  init();
+
+init();
+  
 });
 
 var myScroll;

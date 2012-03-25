@@ -15,6 +15,91 @@ function init () {
 
 }
 
+function getTabData(callback) {
+
+  // Default value for tab data is local version of config.js
+  // Get the text for the tabs from the config.js file
+  var configData = config;
+  
+  // Make act call to get latest config from server
+  $fh.act({
+    act: 'getConfig',
+    req: {
+      ts: Date.now()
+    }
+  }, function (result) {
+    // Got config from server, so overwrite our local config
+    $fh.log({message: 'got config from server:' + JSON.stringify(result)});
+    configData = result.data;
+    
+    // Save it to local storage for use in loss of connectivity
+    $fh.data({
+      act: 'save',
+      key: 'config',
+      val: JSON.stringify(configData)
+    }, function (val) {
+      // Save successful, continue with initialisation
+      setUpTabs(configData, callback);      
+    }, function (error) {
+      // Problem saving data, continue as normal
+      // Initialise app
+      setUpTabs(configData, callback);
+    })
+  }, function (code, errorprops, params) {
+    // Failed to get config from server.
+    $fh.log({message: 'failed to get config from server'});
+    // Check if we have a config saved to local data storage
+    $fh.data({
+      key: 'config'
+    }, function (res) {
+      
+      // Check if we got back stored data
+      if( null === res.val ) {
+        $fh.log({message: 'No config found in local data store'});
+      }
+      else {
+        // Have a stored config, use it
+        configData = JSON.parse(res.val);
+        $fh.log({message: 'got config from local data store:' + JSON.stringify(configData)});
+      }
+    
+      // Initialise app
+      setUpTabs(configData, callback);      
+    }, function (error) {
+      // No stored config, log and use default config instead
+      $fh.log({message: 'failed to get config from local data store. Using default'});
+      setUpTabs(configData, callback);
+    })
+  });
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 function setUpMenuBar() {

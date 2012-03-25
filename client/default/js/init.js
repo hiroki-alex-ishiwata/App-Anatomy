@@ -13,7 +13,8 @@ function init () {
     $(this).attr('value','export text');
     getServerData();
   });
-  $('#btn_01').focus(function (e) {
+  
+  $('#btn_01').click(function (e) {
     e.preventDefault();
     getServerData();
   });

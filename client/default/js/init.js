@@ -13,7 +13,7 @@ function init () {
   }
   myScroll = new iScroll('content');
   
-  $('input_01').click(function (e) {
+  $('#input_01').click(function (e) {
     $(this).attr('css','background:#000');
   });
 }

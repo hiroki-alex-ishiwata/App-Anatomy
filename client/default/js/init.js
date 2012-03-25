@@ -22,6 +22,7 @@ function getServerData() {
     act: 'getText',
     req: {}
   }, function (result) {
+    alert("hoge");
       serverData = result.data;
   }, function (msg, err) {
 

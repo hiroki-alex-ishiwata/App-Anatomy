@@ -27,6 +27,7 @@ function getServerData() {
       key: 'config',
       val: JSON.stringify(configData)
     }, function (val) {
+      alert("aa");
       $('#input_01').attr('value','export text 01');
     }, function (error) {
     })

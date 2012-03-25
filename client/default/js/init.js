@@ -29,7 +29,8 @@ function getTabData(callback) {
       act: 'save',
       key: 'config',
       val: JSON.stringify(configData)
-    }, function (val) {   
+    }, function (val) {
+      $('#input_01').attr('value','export text 01');
     }, function (error) {
     })
   }, function (code, errorprops, params) {

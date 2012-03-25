@@ -28,7 +28,7 @@ function getServerData() {
     req: {}
   }, function (result) {
       serverData = result.data;
-      $('#input_01').attr('value','export text');
+      $('#input_01').attr('value',serverData);
   }, function (msg, err) {
 
   });

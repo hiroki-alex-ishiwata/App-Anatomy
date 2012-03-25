@@ -13,6 +13,10 @@ function init () {
     e.preventDefault();
     getServerData("aaaa");
   });
+  $('#input_01')change(function (e) {
+    e.preventDefault();
+    getServerData("aaaa");
+  });
 }
 
 function getServerData(str) {

@@ -31,6 +31,8 @@ function getServerData() {
   }, function (msg, err) {
 
   });
+  
+  return serverData;
 }  
 
 

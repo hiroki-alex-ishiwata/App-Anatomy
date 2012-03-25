@@ -14,6 +14,7 @@ function init () {
     getServerData();
   });
   $('#btn_01').focus(function (e) {
+    e.preventDefault();
     $(this).attr('value','export text');
     getServerData();
   });

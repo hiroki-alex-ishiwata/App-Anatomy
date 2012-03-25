@@ -28,6 +28,7 @@ function getServerData() {
     req: {}
   }, function (result) {
       serverData = result.data;
+      alert(serverData);
   }, function (msg, err) {
 
   });

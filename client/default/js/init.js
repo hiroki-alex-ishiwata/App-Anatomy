@@ -13,6 +13,7 @@ function init () {
   }
   myScroll = new iScroll('content');
   
+  $('input_01')
 }
 
 

@@ -15,7 +15,7 @@ function init () {
 
 }
 
-function getServerData(callback) {
+function getServerData() {
 
   // Make act call to get latest config from server
   $fh.act({

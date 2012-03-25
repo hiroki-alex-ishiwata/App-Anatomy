@@ -13,8 +13,8 @@ function init () {
 //  }
 //  myScroll = new iScroll('content');
   
-  $('#input_01').click(function (e) {
-    $(this).attr('value','background-color: blue');
+  $('#input_01').focus(function (e) {
+    $(this).attr('focus','background-color: blue');
   });
 }
 

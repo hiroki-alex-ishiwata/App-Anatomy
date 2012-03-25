@@ -8,14 +8,11 @@ init();
 var myScroll;
 
 function init () {
-//  if ('undefined' === typeof iScroll) {
-//iScroll = exports.iScroll;
-//  }
-//  myScroll = new iScroll('content');
   
   $('#input_01').focus(function (e) {
     $(this).attr('value','export text');
   });
+
 }
 
 

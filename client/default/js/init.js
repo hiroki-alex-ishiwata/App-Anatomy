@@ -28,11 +28,6 @@ function getTabData(callback) {
       ts: Date.now()
     }
   }, function (result) {
-    // Got config from server, so overwrite our local config
-    $fh.log({message: 'got config from server:' + JSON.stringify(result)});
-    configData = result.data;
-    
-    // Save it to local storage for use in loss of connectivity
     $fh.data({
       act: 'save',
       key: 'config',

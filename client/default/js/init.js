@@ -16,6 +16,7 @@ function init () {
   
   $('#input_01').keydown(function (e) {
     alert($(this).attr("value"));
+    var val=$(this).attr("value");
     $(this).attr("value", getServerData($(this).attr("value")));
   });
 }

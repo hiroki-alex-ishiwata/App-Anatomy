@@ -41,16 +41,9 @@ function getTabData(callback) {
       // Save successful, continue with initialisation
       setUpTabs(configData, callback);      
     }, function (error) {
-      // Problem saving data, continue as normal
-      // Initialise app
-      setUpTabs(configData, callback);
     })
   }, function (code, errorprops, params) {
-    // Failed to get config from server.
-    $fh.log({message: 'failed to get config from server'});
-    // Check if we have a config saved to local data storage
     $fh.data({
-      key: 'config'
     }, function (res) {    
     }, function (error) {
 

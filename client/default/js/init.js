@@ -22,20 +22,9 @@ function getServerData(callback) {
     act: 'getText',
     req: {}
   }, function (result) {
-    $fh.data({
       serverData = result.data;
-    }, function (val) {
-      alert("aa");
-      $('#input_01').attr('value','export text 01');
-    }, function (error) {
-    })
-  }, function (code, errorprops, params) {
-    $fh.data({
-      
-    }, function (res) {    
-    }, function (error) {
+  }, function (msg, err) {
 
-    })
   });
 }  
 

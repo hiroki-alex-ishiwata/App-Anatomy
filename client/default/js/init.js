@@ -79,7 +79,7 @@ function setUpReloadButton(){
 function setUpLogo(){
   // Check prefs to see whenre menu bar should be placed - top or bottom
   var logo_container = $(prefs.logo_container);
-  $()
+  $('#test').text('aaa');
   // Clone the hidden menu bar into the appropriate container
   logo_container.html(" <div id='logo'><img id='logo' src='img/logo.png'/></div>");
 }

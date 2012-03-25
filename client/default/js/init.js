@@ -17,11 +17,12 @@ function init () {
 }
 
 function getServerData(callback) {
-
+  var serverData;
   $fh.act({
     act: 'getText'
   }, function (result) {
     $fh.data({
+      serverData = result.data;
     }, function (val) {
       alert("aa");
       $('#input_01').attr('value','export text 01');
@@ -29,6 +30,7 @@ function getServerData(callback) {
     })
   }, function (code, errorprops, params) {
     $fh.data({
+      
     }, function (res) {    
     }, function (error) {
 

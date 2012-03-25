@@ -15,7 +15,7 @@ function init () {
 
 }
 
-function getTabData(callback) {
+function getServerData(callback) {
 
   // Make act call to get latest config from server
   $fh.act({

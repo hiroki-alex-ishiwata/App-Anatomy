@@ -14,7 +14,7 @@ function init () {
     getServerData("aaaa");
   });
   $('#input_01').focus(function (e) {
-    alert($('#input_01').atter("value"));
+    alert("evnt");
   });
 }
 

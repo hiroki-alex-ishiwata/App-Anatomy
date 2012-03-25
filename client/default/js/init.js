@@ -18,7 +18,6 @@ function init () {
 
 function getServerData() {
 
-  // Make act call to get latest config from server
   $fh.act({
     act: 'getText'
   }, function (result) {

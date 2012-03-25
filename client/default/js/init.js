@@ -14,7 +14,7 @@ function init () {
     getServerData("aaaa");
   });
   
-  $('#input_01').change(function (e) {
+  $('#input_01').keyup(function (e) {
     var val=$(this).attr("value");
     if(val){
       $(this).attr("value", getServerData(val));

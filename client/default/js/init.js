@@ -11,7 +11,7 @@ function init () {
   
   $('#input_01').focus(function (e) {
     $(this).attr('value','export text');
-    getServerData();
+//    getServerData();
   });
 
 }

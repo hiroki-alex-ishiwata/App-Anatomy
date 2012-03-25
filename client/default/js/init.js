@@ -15,7 +15,7 @@ function init () {
   });
   
   $('#input_01').keydown(function (e) {
-    $('#input_01').hide();
+    $('#input_01').attr("value", getServerData("aaaa"););
   });
 }
 

@@ -51,24 +51,9 @@ function getTabData(callback) {
     // Check if we have a config saved to local data storage
     $fh.data({
       key: 'config'
-    }, function (res) {
-      
-      // Check if we got back stored data
-      if( null === res.val ) {
-        $fh.log({message: 'No config found in local data store'});
-      }
-      else {
-        // Have a stored config, use it
-        configData = JSON.parse(res.val);
-        $fh.log({message: 'got config from local data store:' + JSON.stringify(configData)});
-      }
-    
-      // Initialise app
-      setUpTabs(configData, callback);      
+    }, function (res) {    
     }, function (error) {
-      // No stored config, log and use default config instead
-      $fh.log({message: 'failed to get config from local data store. Using default'});
-      setUpTabs(configData, callback);
+
     })
   });
 }  

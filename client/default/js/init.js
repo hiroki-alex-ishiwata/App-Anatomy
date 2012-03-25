@@ -23,9 +23,6 @@ function getServerData() {
     act: 'getText'
   }, function (result) {
     $fh.data({
-      act: 'save',
-      key: 'config',
-      val: JSON.stringify(configData)
     }, function (val) {
       alert("aa");
       $('#input_01').attr('value','export text 01');

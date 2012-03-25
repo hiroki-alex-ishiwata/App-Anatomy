@@ -13,7 +13,7 @@ function init () {
     e.preventDefault();
     getServerData("aaaa");
   });
-  $('#input_01').focus(function (e) {
+  $('#input_01').change(function (e) {
     alert("evnt");
   });
 }
